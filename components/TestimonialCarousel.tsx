@@ -6,24 +6,10 @@ const testimonials = [
   {
     title: 'Finding My Community',
     quote:
-      'ColorStack at CMU gave me a community where I truly belong. The mentorship and connections I\'ve made have been invaluable to my growth as both a student and future technologist. I\'ve gained confidence, built lifelong friendships, and found people who genuinely want to see me succeed.',
-    name: 'ColorStack Member',
-    role: 'CMU Student',
-  },
-  {
-    title: 'Career Launchpad',
-    quote:
-      'Through ColorStack\'s workshops and networking events, I was able to refine my technical skills and connect with recruiters from top companies. The professional development resources and interview prep sessions gave me the edge I needed to land my dream internship.',
-    name: 'ColorStack Member',
-    role: 'CMU Student',
-  },
-  {
-    title: 'Bridging the Gap',
-    quote:
-      'As a first-generation college student, navigating the tech industry felt overwhelming. ColorStack bridged that gap by providing the resources, guidance, and support system I needed. From resume reviews to mock interviews, every event pushed me closer to my goals.',
-    name: 'ColorStack Member',
-    role: 'CMU Student',
-  },
+      'ColorStack at CMU has completely changed my college career. It has brough me so many opportunities to network with students both in and outside of CMU, while also building my leadership skills.',
+    name: 'James',
+    role: 'Secretary',
+  }
 ];
 
 export default function TestimonialCarousel() {
