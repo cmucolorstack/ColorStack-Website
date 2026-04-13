@@ -140,7 +140,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-bold text-cmu-dark-gray mb-3">Community</h3>
             <p className="text-cmu-iron-gray text-sm leading-relaxed">
-              ColorStack at CMU is small but mighty. Representation in tech at CMU is still catching up, which makes community more important than ever. We're here for any student working toward a career in software — anyone in SCS, ECE, IS, Stat/ML, self-taught folks crossing over — and we work hand-in-hand with SPIRIT, NSBE, and SHPE so students of color have a place to land. Whether it's an intern mixer, a game night, or one of our study jams with pizza, you belong here.            </p>
+              ColorStack at CMU is small but mighty. Representation in tech at CMU is still catching up, which makes community more important than ever. We're here for any student working toward a career in software, whether in in SCS, ECE, IS, Stat/ML or self-taught SWEs; we work hand-in-hand with SPIRIT, NSBE, and SHPE so students of color have a place to land. Whether it's an intern mixer, a game night, or one of our study jams with pizza, you belong here.            </p>
           </div>
         </div>
       </section>
