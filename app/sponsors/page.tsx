@@ -55,6 +55,13 @@ export default function Sponsors() {
               height={80}
               className="object-contain"
             />
+            <Image
+              src="/documents/bloomberg.webp"
+              alt="Bloomberg"
+              width={220}
+              height={80}
+              className="object-contain"
+            />
           </div>
         </div>
       </section>
