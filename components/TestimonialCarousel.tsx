@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 const testimonials = [
   {
-    title: 'Building Connections',
+    title: 'Mentorship & Growth',
     quote:
       'ColorStack helped me connect with other latinos in SWE and feel included at CMU. It also helped me prepare professionally through career advice and mentorship.',
     name: 'Diego',
@@ -16,16 +16,16 @@ const testimonials = [
       'ColorStack at CMU has completely changed my college career. It has brought me so many opportunities to network with students both in and outside of CMU, while also building my leadership skills.',
     name: 'James',
     role: 'Secretary - CS Sophomore',
-  }, 
+  },
   {
-    title: 'Building Connections',
+    title: 'Building Confidence',
     quote:
       'ColorStack at CMU had completely transformed me from someone who was unknowledgable and timid about navigating job searches and preparing for interviews into someone who is now confident in being able to help others overcome similar challenges to become successful professionals.',
     name: 'Deon',
     role: 'Previous Co-President - AI Alumni @ Google',
   },
   {
-    title: 'Building Connections',
+    title: 'Exploring New Paths',
     quote: "Through ColorStack at CMU, I've been able to meet many students, outside of my primary major, who are also interested in computer science and technology! Within my first semester, I had the opportunity of learning about the process of technical interviews from visiting companies and hearing about students' experience with summer internships.",
     name: 'Jordan',
     role: 'Treasurer - Business & IS First-Year'
@@ -35,18 +35,31 @@ const testimonials = [
 export default function TestimonialCarousel() {
   const [current, setCurrent] = useState(0);
 
-  const next = useCallback(() => {
+  const goNext = useCallback(() => {
     setCurrent((prev) => (prev + 1) % testimonials.length);
   }, []);
 
-  const prev = useCallback(() => {
+  const goPrev = useCallback(() => {
     setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   }, []);
 
+  const goTo = useCallback((index: number) => {
+    setCurrent(index);
+  }, []);
+
+  // Reading time: 300ms per word, minimum 10 seconds
+  const getDuration = (index: number) => {
+    const wordCount = testimonials[index].quote.split(/\s+/).length;
+    return Math.max(10000, wordCount * 300);
+  };
+
   useEffect(() => {
-    const timer = setInterval(next, 10000);
-    return () => clearInterval(timer);
-  }, [next]);
+    const duration = getDuration(current);
+    const timer = setTimeout(() => {
+      setCurrent((prev) => (prev + 1) % testimonials.length);
+    }, duration);
+    return () => clearTimeout(timer);
+  }, [current]);
 
   return (
     <section className="py-24 bg-cmu-light-gray">
@@ -78,7 +91,7 @@ export default function TestimonialCarousel() {
           {/* Nav Arrows */}
           <div className="flex justify-center items-center gap-4 mt-8">
             <button
-              onClick={prev}
+              onClick={goPrev}
               className="w-10 h-10 rounded-full border-2 border-cmu-red text-cmu-red flex items-center justify-center hover:bg-cmu-red hover:text-white transition-colors"
               aria-label="Previous testimonial"
             >
@@ -92,7 +105,7 @@ export default function TestimonialCarousel() {
               {testimonials.map((_, i) => (
                 <button
                   key={i}
-                  onClick={() => setCurrent(i)}
+                  onClick={() => goTo(i)}
                   className={`w-2.5 h-2.5 rounded-full transition-colors ${
                     i === current ? 'bg-cmu-red' : 'bg-gray-300'
                   }`}
@@ -102,7 +115,7 @@ export default function TestimonialCarousel() {
             </div>
 
             <button
-              onClick={next}
+              onClick={goNext}
               className="w-10 h-10 rounded-full border-2 border-cmu-red text-cmu-red flex items-center justify-center hover:bg-cmu-red hover:text-white transition-colors"
               aria-label="Next testimonial"
             >
