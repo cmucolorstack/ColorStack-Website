@@ -18,31 +18,55 @@ export default function About() {
         </div>
       </section>
 
-      {/* About Content */}
+      {/* ColorStack National */}
       <section className="py-24 bg-cmu-light-gray">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-white rounded-2xl shadow-md p-8">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-cmu-dark-gray mb-4 text-center">
+            What Is <span className="gradient-text">ColorStack?</span>
+          </h2>
+          <p className="text-center text-cmu-iron-gray text-sm uppercase tracking-widest mb-12">The National Organization</p>
+
+          <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-md p-8 md:p-10">
+            <p className="text-cmu-iron-gray leading-relaxed mb-4">
+              ColorStack is a 501(c)(3) nonprofit with the mission to increase the number of Black and Latinx Computer Science graduates that go on to start rewarding technical careers.
+            </p>
+            <p className="text-cmu-iron-gray leading-relaxed">
+              Launched in 2020 and led by Founder Jehron Petty, a 2020 Computer Science graduate from Cornell University, ColorStack is the home for Black and Latinx college Computer Science students to find confidence, community, and career development.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CMU Chapter Story */}
+      <section className="py-24 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-cmu-dark-gray mb-4 text-center">
+            Our <span className="gradient-text">Chapter</span>
+          </h2>
+          <p className="text-center text-cmu-iron-gray text-sm uppercase tracking-widest mb-12">ColorStack at Carnegie Mellon University</p>
+
+          <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+            <div className="bg-cmu-light-gray rounded-2xl p-8">
               <div className="w-12 h-12 rounded-xl bg-cmu-red/10 flex items-center justify-center mb-5">
                 <svg className="w-6 h-6 text-cmu-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-cmu-dark-gray mb-3">Our Chapter</h3>
+              <h3 className="text-xl font-bold text-cmu-dark-gray mb-3">Our History</h3>
               <p className="text-cmu-iron-gray text-sm leading-relaxed">
-                ColorStack at Carnegie Mellon University is a student-led chapter of the national ColorStack organization. We work to create an inclusive environment for underrepresented students in computing at one of the world&apos;s premier technology institutions.
+                This chapter of ColorStack was founded in the Fall of 2019 under the name of URMC (Underrepresented Minorities in Computing) but was halted by the pandemic. Revived in 2022, this chapter serves to be both a home and a resource to underrepresented minorities in technical fields.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-md p-8">
+            <div className="bg-cmu-light-gray rounded-2xl p-8">
               <div className="w-12 h-12 rounded-xl bg-cmu-red/10 flex items-center justify-center mb-5">
                 <svg className="w-6 h-6 text-cmu-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-cmu-dark-gray mb-3">Our Mission</h3>
+              <h3 className="text-xl font-bold text-cmu-dark-gray mb-3">What We Do</h3>
               <p className="text-cmu-iron-gray text-sm leading-relaxed">
-                We leverage Carnegie Mellon&apos;s vast resources, industry connections, and vibrant tech ecosystem to provide our members with technical workshops, professional development, networking opportunities, and a strong sense of community.
+                We support students at a local level, increasing the effectiveness of the ColorStack national organization. We accomplish this by providing internship listings, career development workshops, and staying updated on industry insights.
               </p>
             </div>
           </div>
@@ -50,7 +74,7 @@ export default function About() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-white">
+      <section id="contact" className="py-24 bg-cmu-light-gray">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-cmu-dark-gray mb-6">
             Get In <span className="gradient-text">Touch</span>

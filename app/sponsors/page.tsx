@@ -55,16 +55,10 @@ export default function Sponsors() {
               height={80}
               className="object-contain"
             />
-            <Image
-              src="/documents/bloomberg.webp"
-              alt="Bloomberg"
-              width={220}
-              height={80}
-              className="object-contain"
-            />
           </div>
         </div>
       </section>
+
 
       {/* Become a Sponsor CTA */}
       <section className="py-24 bg-gradient-to-br from-cmu-dark-gray to-cmu-steel-gray text-white">

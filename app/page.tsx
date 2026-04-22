@@ -91,7 +91,7 @@ export default function Home() {
             Our <span className="gradient-text">Mission.</span>
           </h2>
           <p className="text-lg md:text-xl text-cmu-iron-gray max-w-3xl mx-auto leading-relaxed">
-            As one of the top computer science universities in the nation, we leverage Carnegie Mellon&apos;s vast resources and connections to create meaningful change in tech diversity.
+            As one of the top computer science universities in the nation, we leverage Carnegie Mellon's vast resources to empower Black, Latinx, and Indigenous future technologists, driving meaningful change in the tech industry.
           </p>
           <Link
             href="/about"

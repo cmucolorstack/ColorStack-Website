@@ -4,11 +4,31 @@ import { useState, useEffect, useCallback } from 'react';
 
 const testimonials = [
   {
+    title: 'Building Connections',
+    quote:
+      'ColorStack helped me connect with other latinos in SWE and feel included at CMU. It also helped me prepare professionally through career advice and mentorship.',
+    name: 'Diego',
+    role: 'Member - CS Junior @ AWS',
+  },
+  {
     title: 'Finding My Community',
     quote:
-      'ColorStack at CMU has completely changed my college career. It has brough me so many opportunities to network with students both in and outside of CMU, while also building my leadership skills.',
+      'ColorStack at CMU has completely changed my college career. It has brought me so many opportunities to network with students both in and outside of CMU, while also building my leadership skills.',
     name: 'James',
-    role: 'Secretary',
+    role: 'Secretary - CS Sophomore',
+  }, 
+  {
+    title: 'Building Connections',
+    quote:
+      'ColorStack at CMU had completely transformed me from someone who was unknowledgable and timid about navigating job searches and preparing for interviews into someone who is now confident in being able to help others overcome similar challenges to become successful professionals.',
+    name: 'Deon',
+    role: 'Previous Co-President - AI Alumni @ Google',
+  },
+  {
+    title: 'Building Connections',
+    quote: "Through ColorStack at CMU, I've been able to meet many students, outside of my primary major, who are also interested in computer science and technology! Within my first semester, I had the opportunity of learning about the process of technical interviews from visiting companies and hearing about students' experience with summer internships.",
+    name: 'Jordan',
+    role: 'Treasurer - Business & IS First-Year'
   }
 ];
 
@@ -24,7 +44,7 @@ export default function TestimonialCarousel() {
   }, []);
 
   useEffect(() => {
-    const timer = setInterval(next, 6000);
+    const timer = setInterval(next, 10000);
     return () => clearInterval(timer);
   }, [next]);
 
@@ -42,7 +62,7 @@ export default function TestimonialCarousel() {
 
         <div className="relative">
           {/* Card */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 min-h-[280px] flex flex-col justify-between">
+          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 min-h-[350px] flex flex-col justify-between">
             <div>
               <h4 className="text-xl font-bold text-cmu-red mb-4">{testimonials[current].title}</h4>
               <p className="text-cmu-iron-gray leading-relaxed text-lg italic">
