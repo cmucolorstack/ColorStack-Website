@@ -1,8 +1,15 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
+
+export const metadata: Metadata = {
+  title: 'Sponsors',
+  description: 'Partner with ColorStack at CMU. Sponsor the official ColorStack chapter at Carnegie Mellon University and connect with talented Black, Latinx, and Indigenous CS students.',
+  alternates: { canonical: 'https://colorstackcmu.org/sponsors' },
+};
 
 export default function Sponsors() {
   return (

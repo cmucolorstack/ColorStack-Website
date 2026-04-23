@@ -229,6 +229,12 @@ function EventCard({ event, past = false }: { event: CalendarEvent; past?: boole
 
 // ── page ──────────────────────────────────────────────────────────────────────
 
+export const metadata = {
+  title: 'Events',
+  description: 'Upcoming and past events from ColorStack at CMU — workshops, networking sessions, study jams, and community events at Carnegie Mellon University.',
+  alternates: { canonical: 'https://colorstackcmu.org/events' },
+};
+
 export default async function Events() {
   const [upcoming, past] = await Promise.all([getUpcoming(), getPast()]);
 

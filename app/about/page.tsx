@@ -1,5 +1,12 @@
+import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'Learn about ColorStack at CMU — the official ColorStack chapter at Carnegie Mellon University, founded to support Black, Latinx, and Indigenous students in computing.',
+  alternates: { canonical: 'https://colorstackcmu.org/about' },
+};
 
 export default function About() {
   return (

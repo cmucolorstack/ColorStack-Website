@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
@@ -5,9 +6,44 @@ import Footer from '@/components/Footer';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import CompanyBanner from '@/components/CompanyBanner';
 
+export const metadata: Metadata = {
+  title: 'ColorStack at CMU | Official ColorStack Chapter at Carnegie Mellon University',
+  description: 'The official ColorStack chapter at Carnegie Mellon University. We support Black, Latinx, and Indigenous students in CS through workshops, professional development, and community.',
+  alternates: { canonical: 'https://colorstackcmu.org' },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'ColorStack at Carnegie Mellon University',
+  alternateName: ['ColorStack CMU', 'ColorStack at CMU', 'ColorStack CMU Chapter'],
+  url: 'https://colorstackcmu.org',
+  logo: 'https://colorstackcmu.org/documents/colorstack portal (2).png',
+  description: 'The official ColorStack chapter at Carnegie Mellon University. ColorStack is a national nonprofit increasing the number of Black, Latinx, and Indigenous Computer Science graduates who launch rewarding technical careers.',
+  email: 'cmucolorstack@gmail.com',
+  sameAs: [
+    'https://www.instagram.com/colorstack_cmu/',
+    'https://colorstack.org',
+  ],
+  memberOf: {
+    '@type': 'Organization',
+    name: 'ColorStack',
+    url: 'https://colorstack.org',
+  },
+  parentOrganization: {
+    '@type': 'CollegeOrUniversity',
+    name: 'Carnegie Mellon University',
+    url: 'https://www.cmu.edu',
+  },
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
 
       {/* ── Hero Section ── */}

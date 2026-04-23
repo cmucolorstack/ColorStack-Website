@@ -1,5 +1,12 @@
+import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Meet the Team',
+  description: 'Meet the executive board and student leaders of ColorStack at CMU, the official ColorStack chapter at Carnegie Mellon University.',
+  alternates: { canonical: 'https://colorstackcmu.org/meet-us' },
+};
 
 export default function MeetUs() {
   return (
