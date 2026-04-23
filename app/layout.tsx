@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: 'ColorStack at CMU | ColorStack Chapter at Carnegie Mellon University',
     template: '%s | ColorStack CMU Chapter',
   },
-  description: 'ColorStack at Carnegie Mellon University — the official ColorStack chapter at CMU. Community, workshops, and professional development for Black, Latinx, and Indigenous students in tech.',
+  description: 'ColorStack at Carnegie Mellon University (CMU) — the official ColorStack chapter at CMU. Community, workshops, and professional development for Black, Latinx, and Indigenous students in tech.',
   keywords: [
     'ColorStack CMU',
     'ColorStack Carnegie Mellon',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'ColorStack at CMU | ColorStack Chapter at Carnegie Mellon University',
-    description: 'ColorStack at Carnegie Mellon University — the official ColorStack chapter at CMU. Community, workshops, and professional development for Black, Latinx, and Indigenous students in tech.',
+    description: 'ColorStack at Carnegie Mellon University (CMU) — the official ColorStack chapter at CMU. Community, workshops, and professional development for Black, Latinx, and Indigenous students in tech.',
     type: 'website',
     url: 'https://colorstackcmu.org',
     siteName: 'ColorStack at CMU',
