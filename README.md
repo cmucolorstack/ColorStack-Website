@@ -1,5 +1,5 @@
 # ColorStack at CMU
-Made by William
+Made by William.
 #
 A modern React website for ColorStack at Carnegie Mellon University, built with Next.js, TypeScript, and Tailwind CSS.
 
