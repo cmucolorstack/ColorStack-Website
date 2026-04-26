@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -29,20 +29,11 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://colorstackcmu.org',
     siteName: 'ColorStack at CMU',
-    images: [
-      {
-        url: '/documents/colorstack portal (2).png',
-        width: 512,
-        height: 512,
-        alt: 'ColorStack at CMU',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ColorStack at CMU | ColorStack Chapter at Carnegie Mellon University',
     description: 'The official ColorStack chapter at Carnegie Mellon University.',
-    images: ['/documents/colorstack portal (2).png'],
   },
   alternates: {
     canonical: 'https://colorstackcmu.org',
@@ -52,6 +43,10 @@ export const metadata: Metadata = {
     shortcut: '/icon.png',
     apple: '/icon.png',
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#C41230',
 }
 
 export default function RootLayout({
