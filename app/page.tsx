@@ -18,7 +18,7 @@ const jsonLd = {
   name: 'ColorStack at Carnegie Mellon University',
   alternateName: ['ColorStack CMU', 'ColorStack at CMU', 'ColorStack CMU Chapter'],
   url: 'https://colorstackcmu.org',
-  logo: 'https://colorstackcmu.org/documents/colorstack portal (2).png',
+  logo: 'https://colorstackcmu.org/documents/colorstack portal.png',
   description: 'The official ColorStack chapter at Carnegie Mellon University. ColorStack is a national nonprofit increasing the number of Black, Latinx, and Indigenous Computer Science graduates who launch rewarding technical careers.',
   email: 'cmucolorstack@gmail.com',
   sameAs: [
@@ -89,6 +89,14 @@ export default function Home() {
               Join ColorStack @ CMU
             </a>
             <a
+              href="https://www.instagram.com/colorstack_cmu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block border-2 border-cmu-red text-cmu-red px-6 py-3 rounded-full font-semibold text-center hover:bg-cmu-red hover:text-white transition-all duration-300"
+            >
+              Follow Us on Instagram
+            </a>
+            <a
               href="https://colorstackcmu-xog2733.slack.com/join/shared_invite/zt-3efky9p51-lgong62X_lybJnZk~NoaeQ"
               target="_blank"
               rel="noopener noreferrer"
@@ -97,12 +105,20 @@ export default function Home() {
               Join Our Slack
             </a>
             <a
-              href="https://www.instagram.com/colorstack_cmu/"
+              href="https://app.colorstack.io/apply"
               target="_blank"
               rel="noopener noreferrer"
-              className="block border-2 border-cmu-red text-cmu-red px-6 py-3 rounded-full font-semibold text-center hover:bg-cmu-red hover:text-white transition-all duration-300"
+              className="block border-2 border-cmu-dark-gray text-cmu-dark-gray px-6 py-3 rounded-full font-semibold text-center hover:bg-cmu-dark-gray hover:text-white transition-all duration-300"
             >
-              Follow Us on Instagram
+              Apply for ColorStack Nationals
+            </a>
+            <a
+              href="https://forms.gle/EkGyfUUhuDijzztv9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block border-2 border-cmu-dark-gray text-cmu-dark-gray px-6 py-3 rounded-full font-semibold text-center hover:bg-cmu-dark-gray hover:text-white transition-all duration-300"
+            >
+              Apply for Internships
             </a>
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=cmucolorstack@gmail.com"

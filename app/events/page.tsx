@@ -128,27 +128,30 @@ async function getPast(): Promise<CalendarEvent[]> {
 
 // ── formatting ────────────────────────────────────────────────────────────────
 
+const EVENT_TIME_ZONE = 'America/New_York';
+
 function formatDate(iso: string, allDay: boolean) {
   const date = new Date(iso);
   if (allDay) {
-    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', timeZone: EVENT_TIME_ZONE });
   }
   return date.toLocaleDateString('en-US', {
     weekday: 'long', month: 'long', day: 'numeric',
     hour: 'numeric', minute: '2-digit', timeZoneName: 'short',
+    timeZone: EVENT_TIME_ZONE,
   });
 }
 
 function formatMonth(iso: string) {
-  return new Date(iso).toLocaleDateString('en-US', { month: 'short' }).toUpperCase();
+  return new Date(iso).toLocaleDateString('en-US', { month: 'short', timeZone: EVENT_TIME_ZONE }).toUpperCase();
 }
 
 function formatDay(iso: string) {
-  return new Date(iso).getDate();
+  return Number(new Date(iso).toLocaleDateString('en-US', { day: 'numeric', timeZone: EVENT_TIME_ZONE }));
 }
 
 function formatYear(iso: string) {
-  return new Date(iso).getFullYear();
+  return new Date(iso).toLocaleDateString('en-US', { year: 'numeric', timeZone: EVENT_TIME_ZONE });
 }
 
 // ── components ────────────────────────────────────────────────────────────────

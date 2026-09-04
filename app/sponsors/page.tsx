@@ -33,7 +33,7 @@ export default function Sponsors() {
               Become A Sponsor
             </a>
             <a
-              href="/documents/ColorStack CMU Sponsorship Packet (1).pdf"
+              href="/documents/ColorStack CMU Sponsorship Packet.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block border-2 border-cmu-red text-cmu-red px-8 py-3 rounded-full font-semibold hover:bg-cmu-red hover:text-white transition-all duration-300"
