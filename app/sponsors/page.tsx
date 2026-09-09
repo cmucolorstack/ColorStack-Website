@@ -75,7 +75,7 @@ export default function Sponsors() {
             Interested in partnering with ColorStack at CMU? Fill out the form below and we&apos;ll get back to you.
           </p>
           <a
-            href="/documents/ColorStack CMU Sponsorship Packet (1).pdf"
+            href="/documents/ColorStack CMU Sponsorship Packet.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-cmu-dark-gray transition-all duration-300 mb-2"
