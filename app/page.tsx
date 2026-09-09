@@ -118,7 +118,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="block border-2 border-cmu-dark-gray text-cmu-dark-gray px-6 py-3 rounded-full font-semibold text-center hover:bg-cmu-dark-gray hover:text-white transition-all duration-300"
             >
-              Apply for Internships
+              Apply for Our E-board
             </a>
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=cmucolorstack@gmail.com"
