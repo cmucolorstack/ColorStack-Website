@@ -16,14 +16,14 @@ interface TeamMember {
 }
 
 const TEAM: TeamMember[] = [
-  { name: 'Kwame Asare', role: 'Co-President', photo: '/people/kwame.png' },
   { name: 'William Montague', role: 'Co-President', photo: '/people/william.png' },
-  { name: 'Tchegnon Adjagbodjou', role: 'Secretary', photo: '/people/tchegnon.png' },
-  { name: 'James Okeke', role: 'Treasurer', photo: '/people/james.png' },
-  { name: 'Jorden Windross', role: 'Corporate & Academic Director', photo: '/people/jorden.png' },
-  { name: 'Sophia Solomon', role: 'Community Outreach', photo: '/people/sophia.png' },
-  { name: 'Rachel Quaye-Asamoah', role: 'Underclassmen Outreach', photo: '/people/rachel.png' },
-  { name: 'Funmi Ekiyoyo', role: 'Design and Social Media Chair', photo: '/people/funmi.png' },
+  { name: 'Tchegnon Adjagbodjou', role: 'Co-President', photo: '/people/tchegnon.png' },
+  { name: 'Jorden Windross', role: 'Treasurer', photo: '/people/jorden.png' },
+  { name: 'James Okeke', role: 'Secretary', photo: '/people/james.png' },
+  { name: 'Sophia Solomon', role: 'Corporate & Academic Director', photo: '/people/sophia.png' },
+  { name: 'Kwame Asare', role: 'Design and Social Media Chair', photo: '/people/kwame.png' },
+  { name: 'Rachel Quaye-Asamoah', role: 'Community Outreach', photo: '/people/rachel.png' },
+  { name: 'Funmi Ekiyoyo', role: 'Underclassmen Outreach', photo: '/people/funmi.png' },
 ];
 
 export default function MeetUs() {
